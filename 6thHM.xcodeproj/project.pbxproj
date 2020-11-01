@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68521E14254DD19200EB2AAC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68521E13254DD19200EB2AAC /* UIColor.swift */; };
 		68CB256B254C4C570014048C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB256A254C4C570014048C /* AppDelegate.swift */; };
 		68CB256D254C4C570014048C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB256C254C4C570014048C /* SceneDelegate.swift */; };
-		68CB256F254C4C570014048C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB256E254C4C570014048C /* ViewController.swift */; };
+		68CB256F254C4C570014048C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB256E254C4C570014048C /* StartViewController.swift */; };
 		68CB2572254C4C570014048C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CB2570254C4C570014048C /* Main.storyboard */; };
 		68CB2574254C4C590014048C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CB2573254C4C590014048C /* Assets.xcassets */; };
 		68CB2577254C4C590014048C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CB2575254C4C590014048C /* LaunchScreen.storyboard */; };
+		68CB2580254C94280014048C /* ColorSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB257F254C94280014048C /* ColorSettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68521E13254DD19200EB2AAC /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		68CB2567254C4C570014048C /* 6thHM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 6thHM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CB256A254C4C570014048C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68CB256C254C4C570014048C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		68CB256E254C4C570014048C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68CB256E254C4C570014048C /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		68CB2571254C4C570014048C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68CB2573254C4C590014048C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68CB2576254C4C590014048C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68CB2578254C4C590014048C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68CB257F254C94280014048C /* ColorSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68521E16254DD30900EB2AAC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				68521E13254DD19200EB2AAC /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		68521E18254DD35C00EB2AAC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				68CB2570254C4C570014048C /* Main.storyboard */,
+				68CB2575254C4C590014048C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		68521E19254DD37400EB2AAC /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				68CB256A254C4C570014048C /* AppDelegate.swift */,
+				68CB256C254C4C570014048C /* SceneDelegate.swift */,
+				68CB2578254C4C590014048C /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		68521E1C254DD71D00EB2AAC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				68CB2573254C4C590014048C /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		68CB255E254C4C570014048C = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +95,22 @@
 		68CB2569254C4C570014048C /* 6thHM */ = {
 			isa = PBXGroup;
 			children = (
-				68CB256A254C4C570014048C /* AppDelegate.swift */,
-				68CB256C254C4C570014048C /* SceneDelegate.swift */,
-				68CB256E254C4C570014048C /* ViewController.swift */,
-				68CB2570254C4C570014048C /* Main.storyboard */,
-				68CB2573254C4C590014048C /* Assets.xcassets */,
-				68CB2575254C4C590014048C /* LaunchScreen.storyboard */,
-				68CB2578254C4C590014048C /* Info.plist */,
+				68CB2582254C94380014048C /* ViewControllers */,
+				68521E18254DD35C00EB2AAC /* Storyboards */,
+				68521E16254DD30900EB2AAC /* Extensions */,
+				68521E19254DD37400EB2AAC /* SupportingFiles */,
+				68521E1C254DD71D00EB2AAC /* Sources */,
 			);
 			path = 6thHM;
+			sourceTree = "<group>";
+		};
+		68CB2582254C94380014048C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				68CB256E254C4C570014048C /* StartViewController.swift */,
+				68CB257F254C94280014048C /* ColorSettingViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68CB256F254C4C570014048C /* ViewController.swift in Sources */,
+				68CB256F254C4C570014048C /* StartViewController.swift in Sources */,
+				68521E14254DD19200EB2AAC /* UIColor.swift in Sources */,
 				68CB256B254C4C570014048C /* AppDelegate.swift in Sources */,
+				68CB2580254C94280014048C /* ColorSettingViewController.swift in Sources */,
 				68CB256D254C4C570014048C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7769A574Q6;
-				INFOPLIST_FILE = 6thHM/Info.plist;
+				INFOPLIST_FILE = 6thHM/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7769A574Q6;
-				INFOPLIST_FILE = 6thHM/Info.plist;
+				INFOPLIST_FILE = 6thHM/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
